@@ -9,7 +9,7 @@ namespace T1806E_CSharp
         {
             Console.WriteLine("nhap n=");
             int n = Console.Read();
-
+            Console.ReadLine();
             Console.WriteLine("nhap 1 chuoi:");
             string str = Console.ReadLine();
 
