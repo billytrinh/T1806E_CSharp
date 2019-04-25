@@ -5,7 +5,14 @@ namespace T1806E_CSharp
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main(String[] args)
+        {
+            SinhVien sv = new SinhVien();
+            SinhVien sv1 = new SinhVien(1);
+            Console.ReadKey();
+        }
+
+        public static void Main2(string[] args)
         {
             Console.WriteLine("nhap n=");
             int n = Console.Read();
@@ -30,7 +37,9 @@ namespace T1806E_CSharp
             {
                 Console.WriteLine(x);
             }
-
+           
         }
+
+   
     }
 }
