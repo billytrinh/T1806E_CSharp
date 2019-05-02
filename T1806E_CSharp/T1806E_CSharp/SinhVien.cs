@@ -1,4 +1,5 @@
 ﻿using System;
+using T1806E_CSharp.Session4;
 namespace T1806E_CSharp
 {
     public class SinhVien
@@ -48,9 +49,17 @@ namespace T1806E_CSharp
 
         public static void Main(String[] args)
         {
-            SinhVien sv = new SinhVien();
-            sv.BaoKetQua();
-          
+            Human human = new Human();
+            string name = Console.ReadLine();
+            human.Name = "Le van Nam";
+            Console.WriteLine(human.Name);
+            human[0] = 3;
+            human[1] = 6;
+            human[2] = 8;
+            for(int i=0;i< human.mark.Length; i++)
+            {
+                Console.WriteLine(human[i]);
+            }
         }
     }
 

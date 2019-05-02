@@ -5,7 +5,7 @@ namespace T1806E_CSharp.Session4
     {
         public Asian()
         {
-            this.id = 10;
+            //this.id = 10;
         }
 
         public override void Run()
