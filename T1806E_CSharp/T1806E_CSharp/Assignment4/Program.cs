@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 namespace T1806E_CSharp.Assignment4
 {
     public class Program
@@ -27,6 +28,7 @@ namespace T1806E_CSharp.Assignment4
                     }
                 }
             }
+
         }
 
         public static void ViewAll(List<News> listNews)
@@ -45,5 +47,6 @@ namespace T1806E_CSharp.Assignment4
                 x.Display();
             }
         }
+
     }
 }

@@ -9,6 +9,7 @@ namespace T1806E_CSharp
         {
             SinhVien sv = new SinhVien();
             SinhVien sv1 = new SinhVien(1);
+          
             Console.ReadKey();
         }
 

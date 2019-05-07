@@ -9,7 +9,7 @@ namespace T1806E_CSharp.Assignment4
         public string author;
         public string content;
         public float averageRate;
-
+        internal int rate;
 
         public int[] rateList = new int[3];
 
@@ -111,6 +111,7 @@ namespace T1806E_CSharp.Assignment4
                 total += i;
             }
             averageRate = (float)total / 3;
+         
         }
     }
 }
