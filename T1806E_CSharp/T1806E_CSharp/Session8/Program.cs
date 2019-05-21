@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 namespace T1806E_CSharp.Session8
 {
     public class Program
@@ -17,8 +16,11 @@ namespace T1806E_CSharp.Session8
             number2.number_one = 12;
             number2.number_two = (float)3.14;
             number2.total();
-           // List<int> aa = new List<int>();
+           
             MyGeneric<int, string> xyz = new MyGeneric<int, string>();
+
+            Number<Asian> aaa = new Number<Asian>();
+            aaa.methodX(new Asian());
         }
     }
     public class MyGeneric<K, V>
@@ -26,11 +28,28 @@ namespace T1806E_CSharp.Session8
 
     }
 
+    public class Human
+    {
+        public void show()
+        {
+
+        }
+    }
+
+    public class Asian : Human
+    {
+
+    }
 
     public class Number<T>
     {
         public T number_one;
         public T number_two;
+
+        public void methodX <T>(T t) where T : Human
+        {
+            t.show();
+        }
 
         public void total()
         {
